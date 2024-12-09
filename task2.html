@@ -1,0 +1,120 @@
+<!-- Create an HTML table to display data and an HTML form to collect user input -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table,
+    th,
+    tr,
+    td {
+      border: 2px solid rgb(187, 187, 187);
+      border-radius: 5px;
+      border-collapse: collapse;
+      text-align: left;
+
+    }
+
+    .submit {
+      padding: 3px;
+      color: rgb(0, 0, 0);
+      width: 80px;
+      height: 40px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .submit:hover {
+      background-color: rgb(224, 255, 225);
+      font-weight: bolder;
+    }
+  </style>
+</head>
+
+<body>
+  <table style="width: 50%;">
+    <colgroup>
+
+    </colgroup>
+    <caption>Data Table</caption>
+    <tr>
+    <tr>
+    <tr col span="" style="background-color: aquamarine; height: 40px;">
+      <th>name</th>
+      <th>address</th>
+      <th>phone number</th>
+      <th>salary</th>
+    </tr>
+    <tr>
+      <td>saurab</td>
+      <td>sukedhara</td>
+      <td>9834332345</td>
+      <td>1,00,000</td>
+    </tr>
+    <tr>
+      <td>kushal</td>
+      <td>naikap</td>
+      <td>9860220644</td>
+      <td>4,00,000</td>
+    </tr>
+    <tr>
+      <td>yalamber rai</td>
+      <td>tilganga</td>
+      <td>983344333</td>
+      <td>3,50,000</td>
+    </tr>
+    <tr>
+      <td>shyam</td>
+      <td>bhangal</td>
+      <td>9834332322</td>
+      <td>4,00,000</td>
+    </tr>
+
+  </table>
+  <br><br>
+  <hr>
+  <fieldset>
+    <legend>Registration</legend>
+    <form action="" style="width: 70%;">
+      <label for="firstname">firstname</label><br>
+      <input type="text" name="firstname" id="firstname"><br>
+      <label for="lastname">lastname</label><br>
+      <input type="text" name="lastname" id="lastname"><br>
+      <label for="password">password</label><br>
+      <input type="password" name="password" id="password"><br>
+      <label for="email">Email</label><br>
+      <input type="email" name="email" id="email"><br>
+
+      <label for="Gender">Choose gender:</label><br>
+      <input type="radio" name="gender" id="male">
+      <label for="Male">male</label><br>
+      <input type="radio" name="gender" id="female">
+      <label for="Male">female</label><br>
+      <input type="radio" name="gender" id="other">
+      <label for="Male">other</label><br>
+
+      <br>
+      <label for="hobbies">Hobbies</label><br>
+      <input type="checkbox" name="hockey" id="hockey">
+      <label for="hockey">hockey</label><br>
+      <input type="checkbox" name="volleyball" id="volleyball">
+      <label for="volleyball">volleyball</label><br>
+      <input type="checkbox" name="cricket" id="cricket">
+      <label for="cricket">cricket</label><br><br>
+
+      <label for="carrier">choose which field you will choose:</label>
+      <select name="carriers" id="carrier">
+        <option value="Data analytics" selected>Data analytics</option>
+        <option value="QA">QA</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Java">Java</option>
+
+      </select><br>
+      <input type="submit" name="submit" class="submit" value="submit">
+    </form>
+  </fieldset>
+</body>
+
+</html>
