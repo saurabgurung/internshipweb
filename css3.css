@@ -1,0 +1,38 @@
+div {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  /* opacity: 0.4; */
+
+}
+
+.web1 {
+  color: black;
+  font-weight: bold;
+  background-color: bisque;
+
+}
+
+body {
+  background-image: url("image/paper1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+p.a {
+  color: red;
+  background-color: white;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bolder;
+  text-decoration-line: overline underline;
+}
+
+p.b {
+  text-decoration-line: line-through;
+  color: black;
+  text-transform: uppercase;
+  font-size: medium;
+}
