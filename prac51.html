@@ -1,0 +1,28 @@
+<html>
+
+<body>
+
+  <h2>What Can JavaScript Do?</h2>
+
+  <p id="demo">JavaScript can change HTML content.</p>
+  <p id="dem"></p>
+  <div id="dem1"></div>
+  <!-- <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button> -->
+  <script>
+    function myfunction (a, b) {
+      return a * b;
+    }
+    let result = myfunction(4, 5);
+    document.getElementById("dem").innerHTML = result;
+
+    let text = "the temperature is " + tocelsius(77) + " celsius.";
+    document.getElementById("dem1").innerHTML = text;
+    function tocelsius (farenhiet) {
+      return (5 / 9) * (farenhiet - 32);
+
+    }
+  </script>
+
+</body>
+
+</html>

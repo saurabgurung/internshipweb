@@ -1,0 +1,118 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .head h1 {
+      text-align: center;
+      margin: 10px;
+      padding: 10px;
+      border: 2px solid black;
+    }
+
+    .body {
+      margin: 10px;
+      padding: 10px;
+      border: 2px solid rgb(127, 0, 0);
+      height: 600px;
+    }
+
+    .body {
+      position: relative;
+    }
+
+    .fixx {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 5px;
+      width: 150px;
+      border: 2px solid red;
+    }
+
+    .fixx1 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin: 5px;
+      width: 170px;
+      border: 2px solid red;
+    }
+
+    .fixx2 {
+      position: sticky;
+      top: 0;
+      padding: 5px;
+      background-color: #837400;
+      border: 2px solid #078a0b;
+    }
+
+    .lis {
+      background-color: black;
+      margin: 20px;
+      margin-top: 30px;
+
+    }
+
+    .lis li {
+      float: left;
+
+
+    }
+
+    .lis li a {
+      color: rgb(96, 0, 0);
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: capitalize;
+      padding: 5px;
+      margin: 25px;
+
+    }
+
+    .lis li a:hover {
+      color: rgb(1, 132, 27);
+
+    }
+
+    span {
+      display: block;
+    }
+
+    @media screen and (max-width:600px) {
+      .column {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Create a simple CSS layout using positioning, float, and display properties, and add
+  media queries for responsiveness. -->
+  <div>
+    <div class="fixx2">this is fixed side.</div>
+    <div class="head">
+      <h1>heading top</h1>
+    </div>
+    <div class="body">
+      <div class="fixx">this is fixed container.</div>
+      <div class="fixx1">this is fixed container 2.</div>
+      <div class="lis">
+
+        <li><a href="abc">home</a></li>
+        <li><a href="abc">service</a></li>
+        <li><a href="abc">about</a></li>
+
+
+      </div>
+
+    </div>
+    <span>hello this is span and this is inline display</span><span>checking</span><span>second checkin</span>
+
+  </div>
+</body>
+
+</html>
